@@ -73,7 +73,7 @@ const Dashboard = () => {
   };
 
   return (
-  
+    <div className=""><Navbar/>
     <main className="p-6 grid grid-cols-1 gap-10">
       
       {/* Enrolled Exams Section */}
@@ -127,6 +127,7 @@ const Dashboard = () => {
       </section>
 
     </main>
+    </div>
   );
 };
 
