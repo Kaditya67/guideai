@@ -1,8 +1,12 @@
+//import './App.css'
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Footer from "./components/Footer";
 import NotFound from "./pages/NotFound";
+//import Home from "./pages/Home";
+function App() { 
+
 
 const App = () => {
   return (
@@ -12,6 +16,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="*" element={<NotFound />} />
+            
           </Routes>
         </div>
         <Footer />
@@ -20,4 +25,5 @@ const App = () => {
   );
 };
 
+}
 export default App;
