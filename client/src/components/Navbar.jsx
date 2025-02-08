@@ -7,12 +7,13 @@ const Navbar = () => {
     <nav className="bg-gray-800 text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
         <a href="#" className="text-xl font-bold">LOGO</a>
-        <div className="hidden md:flex space-x-4">
-          <a href="#" className="hover:text-gray-300">Home</a>
-          <a href="#" className="hover:text-gray-300">About</a>
+        <div className="hidden md:flex space-x-4 ">
+          <a href="#" className="hover:font-bold transition-all">Home</a>
+          <a href="#" className="hover:font-bold transition-all">About</a>
+          <a href="#" className="hover:font-bold transition-all">Dashboard</a>
           <div className="relative">
             <button
-              className="hover:text-gray-300"
+              className="hover:font-bold transition-all"
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             >
               Services ▼
@@ -31,7 +32,7 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          <a href="#" className="hover:text-gray-300">Contact</a>
+          <a href="#" className="hover:font-bold transition-all">Contact</a>
         </div>
       </div>
     </nav>
