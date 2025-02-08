@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FiSearch } from "react-icons/fi"; // Importing search icon
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -40,9 +41,15 @@ const Navbar = () => {
 
         {/* Right Section - Navigation Links */}
         <div className="hidden md:flex space-x-6 items-center">
-          <a href="#" className="hover:text-gray-400">Home</a>
-          <a href="#" className="hover:text-gray-400">About</a>
-
+        <Link to="/home" className="hover:font-bold transition-all">
+            Home
+          </Link>
+          <Link to="/" className="hover:font-bold transition-all">
+            Dashboard
+          </Link>
+         <Link to="/about/" className="hover:font-bold transition-all">
+            About
+          </Link>
           {/* Dropdown - Opens on Hover and Click */}
           <div 
             className="relative"
@@ -51,7 +58,7 @@ const Navbar = () => {
             onMouseLeave={() => setIsDropdownOpen(false)}
           >
             <button 
-              className="hover:text-gray-400"
+              className="hover:font-bold transition-all"
               onClick={() => setIsDropdownOpen(prev => !prev)}
             >
               Services ▼
@@ -65,7 +72,7 @@ const Navbar = () => {
             )}
           </div>
 
-          <a href="#" className="hover:text-gray-400">Contact</a>
+          <a href="#" className="hover:font-bold transition-all">Contact</a>
         </div>
       </div>
     </nav>
