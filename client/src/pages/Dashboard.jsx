@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Card from "../components/Card";
+import Navbar from "../components/Navbar";
 
 // Data Lists
 const enrolledExams = [
@@ -72,6 +73,16 @@ const Dashboard = () => {
   };
 
   return (
+<<<<<<< HEAD
+    <div className="min-h-screen bg-gray-100">
+      <Navbar /> {/* Navbar will take full width if coded correctly */}
+      <main className="p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <Card title="Total Users" value="1,250" color="#3b82f6" />
+        <Card title="Sales Today" value="$4,500" color="#10b981" />
+        <Card title="Active Sessions" value="350" color="#f59e0b" />
+      </main>
+    </div>
+=======
     <main className="p-6 grid grid-cols-1 gap-10">
       
       {/* Enrolled Exams Section */}
@@ -125,7 +136,9 @@ const Dashboard = () => {
       </section>
 
     </main>
+>>>>>>> fcc2598e252c6652c73f973df567b1a30b04c4b3
   );
 };
 
 export default Dashboard;
+
